@@ -26,8 +26,6 @@ $(document).ready(function(){
 	$(window).on('scroll', function(){
 		setSticky();
 		
-
-
 	});
 
 
@@ -43,13 +41,10 @@ $(document).ready(function(){
 	
 		function odsylacz(){
 
-			
-
 			$('.menu , .icons , .smallShape').find('a').on('click', function(){
 
 			    var href = $(this).attr('href');
 
-		//	    console.log($(href).offset().top)
 		 		$('html, body').animate({
 		            scrollTop: $(href).offset().top - height + 10
 		        }, 1000);
@@ -57,12 +52,12 @@ $(document).ready(function(){
 				return false;
 			})
 		
-
+//	    console.log($(href).offset().top)
 		}
 
 		odsylacz();
 
-
+		
 
 
 	$('.hamburger').on('click', function(){
