@@ -201,412 +201,178 @@ $(document).ready(function(){
 	sliderPeople();
 
 	function purplebars(){
-		if( $(window).width() > 521){
-			$('.right_arrow').on('click', function(){
-				var span1 = $('.gray_bar1 span');
-				var span2 = $('.gray_bar2 span');
-				var span3 = $('.gray_bar3 span');
-				var span4 = $('.gray_bar4 span');
-				var percentage1 = $('.percentage1');
-				var percentage2 = $('.percentage2');
-				var percentage3 = $('.percentage3');
-				var percentage4 = $('.percentage4');
-		 
-			if ($('.slick-track').children().eq(4).hasClass('slick-center')){
+
+			var span1 = $('.gray_bar1 span');
+			var span2 = $('.gray_bar2 span');
+			var span3 = $('.gray_bar3 span');
+			var span4 = $('.gray_bar4 span');
+
+			var percentage1 = $('.percentage1');
+			var percentage2 = $('.percentage2');
+			var percentage3 = $('.percentage3');
+			var percentage4 = $('.percentage4');
+
+			function firstPerson(){
 				span1.removeClass();
 				span1.addClass('purple_bar1_1');
-				$('.percentage1').html('82%');
+				percentage1.html('82%');
 				span2.removeClass();
 				span2.addClass('purple_bar2_1');
-				$('.percentage2').html('45%');
+				percentage2.html('45%');
 				span3.removeClass();
 				span3.addClass('purple_bar3_1');
-				$('.percentage3').html('95%');
+				percentage3.html('95%');
 				span4.removeClass();
 				span4.addClass('purple_bar4_1');
-				$('.percentage4').html('45%');
+				percentage4.html('45%');	
+				}
+
+			function secondPerson(){
+				span1.removeClass();
+				span1.addClass('purple_bar1_2');
+				percentage1.html('18%');
+				span2.removeClass();
+				span2.addClass('purple_bar2_2');
+				percentage2.html('23%');
+				span3.removeClass();
+				span3.addClass('purple_bar3_2');
+				percentage3.html('8%');
+				span4.removeClass();
+				span4.addClass('purple_bar4_2');
+				percentage4.html('65%');	
+				}
+
+			function thirdPerson(){
+				span1.removeClass();
+				span1.addClass('purple_bar1_3');
+				percentage1.html('41%');
+				span2.removeClass();
+				span2.addClass('purple_bar2_3');
+				percentage2.html('95%');
+				span3.removeClass();
+				span3.addClass('purple_bar3_3');
+				percentage3.html('25%');
+				span4.removeClass();
+				span4.addClass('purple_bar4_3');
+				percentage4.html('100%');
+				}
+
+
+		if( $(window).width() > 521){
+			$('.right_arrow').on('click', function(){
+
+
+			if ($('.slick-track').children().eq(4).hasClass('slick-center')){
+				firstPerson();
 			}
 
 			else if ($('.slick-track').children().eq(5).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_2');
-				$('.percentage1').html('18%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_2');
-				$('.percentage2').html('23%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_2');
-				$('.percentage3').html('8%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_2');
-				$('.percentage4').html('65%');
+				secondPerson();
 			}
 
 			else if ($('.slick-track').children().eq(6).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_3');
-				$('.percentage1').html('41%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_3');
-				$('.percentage2').html('95%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_3');
-				$('.percentage3').html('25%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_3');
-				$('.percentage4').html('100%');
+				thirdPerson();
 			}
 
 			else if ($('.slick-track').children().eq(7).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_1');
-				$('.percentage1').html('82%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_1');
-				$('.percentage2').html('45%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_1');
-				$('.percentage3').html('95%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_1');
-				$('.percentage4').html('45%');
+				firstPerson();
 			}
 
 			else if ($('.slick-track').children().eq(8).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_2');
-				$('.percentage1').html('18%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_2');
-				$('.percentage2').html('23%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_2');
-				$('.percentage3').html('8%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_2');
-				$('.percentage4').html('65%');
+				secondPerson();
 			}
 
 			else if ($('.slick-track').children().eq(9).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_3');
-				$('.percentage1').html('41%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_3');
-				$('.percentage2').html('95%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_3');
-				$('.percentage3').html('25%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_3');
-				$('.percentage4').html('100%');
+				thirdPerson();
 			}
-
 
 			})
 			
 			$('.left_arrow').on('click', function(){
-				span1 = $('.gray_bar1 span');
-				span2 = $('.gray_bar2 span');
-				span3 = $('.gray_bar3 span');
-				span4 = $('.gray_bar4 span');
-
 		 
 			if ($('.slick-track').children().eq(4).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_1');
-				$('.percentage1').html('82%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_1');
-				$('.percentage2').html('45%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_1');
-				$('.percentage3').html('95%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_1');
-				$('.percentage4').html('45%');
+				firstPerson();
 			}
 
 			else if ($('.slick-track').children().eq(5).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_2');
-				$('.percentage1').html('18%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_2');
-				$('.percentage2').html('23%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_2');
-				$('.percentage3').html('8%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_2');
-				$('.percentage4').html('65%');
+				secondPerson();
 			}
 
 			else if ($('.slick-track').children().eq(6).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_3');
-				$('.percentage1').html('41%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_3');
-				$('.percentage2').html('95%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_3');
-				$('.percentage3').html('25%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_3');
-				$('.percentage4').html('100%');
+				thirdPerson();
 			}
 
 			else if ($('.slick-track').children().eq(7).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_1');
-				$('.percentage1').html('82%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_1');
-				$('.percentage2').html('45%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_1');
-				$('.percentage3').html('95%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_1');
-				$('.percentage4').html('45%');
+				firstPerson();
 			}
 
 			else if ($('.slick-track').children().eq(8).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_2');
-				$('.percentage1').html('18%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_2');
-				$('.percentage2').html('23%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_2');
-				$('.percentage3').html('8%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_2');
-				$('.percentage4').html('65%');
+				secondPerson();
 			}
 
 			else if ($('.slick-track').children().eq(9).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_3');
-				$('.percentage1').html('41%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_3');
-				$('.percentage2').html('95%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_3');
-				$('.percentage3').html('25%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_3');
-				$('.percentage4').html('100%');
+				thirdPerson();
 			}
-
-
 			})
 			}
 
 		if( $(window).width() < 521){
 			$('.right_arrow').on('click', function(){
-				span1 = $('.gray_bar1 span');
-				span2 = $('.gray_bar2 span');
-				span3 = $('.gray_bar3 span');
-				span4 = $('.gray_bar4 span');
-
 		 
 			if ($('.slick-track').children().eq(2).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_1');
-				$('.percentage1').html('82%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_1');
-				$('.percentage2').html('45%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_1');
-				$('.percentage3').html('95%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_1');
-				$('.percentage4').html('45%');
+				firstPerson();
 			}
 
 			else if ($('.slick-track').children().eq(3).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_2');
-				$('.percentage1').html('18%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_2');
-				$('.percentage2').html('23%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_2');
-				$('.percentage3').html('8%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_2');
-				$('.percentage4').html('65%');
+				secondPerson();
 			}
 
 			else if ($('.slick-track').children().eq(4).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_3');
-				$('.percentage1').html('41%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_3');
-				$('.percentage2').html('95%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_3');
-				$('.percentage3').html('25%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_3');
-				$('.percentage4').html('100%');
+				thirdPerson();
 			}
 
 			else if ($('.slick-track').children().eq(5).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_1');
-				$('.percentage1').html('82%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_1');
-				$('.percentage2').html('45%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_1');
-				$('.percentage3').html('95%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_1');
-				$('.percentage4').html('45%');
+				firstPerson();
 			}
 
 			else if ($('.slick-track').children().eq(6).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_2');
-				$('.percentage1').html('18%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_2');
-				$('.percentage2').html('23%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_2');
-				$('.percentage3').html('8%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_2');
-				$('.percentage4').html('65%');
+				secondPerson();
 			}
 
 			else if ($('.slick-track').children().eq(7).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_3');
-				$('.percentage1').html('41%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_3');
-				$('.percentage2').html('95%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_3');
-				$('.percentage3').html('25%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_3');
-				$('.percentage4').html('100%');
+				thirdPerson();
 			}
-
-
 			})
 			
 			$('.left_arrow').on('click', function(){
-				span1 = $('.gray_bar1 span');
-				span2 = $('.gray_bar2 span');
-				span3 = $('.gray_bar3 span');
-				span4 = $('.gray_bar4 span');
-
 		 
 			if ($('.slick-track').children().eq(2).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_1');
-				$('.percentage1').html('82%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_1');
-				$('.percentage2').html('45%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_1');
-				$('.percentage3').html('95%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_1');
-				$('.percentage4').html('45%');
+				firstPerson();
 			}
 
 			else if ($('.slick-track').children().eq(3).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_2');
-				$('.percentage1').html('18%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_2');
-				$('.percentage2').html('23%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_2');
-				$('.percentage3').html('8%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_2');
-				$('.percentage4').html('65%');
+				secondPerson();
 			}
 
 			else if ($('.slick-track').children().eq(4).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_3');
-				$('.percentage1').html('41%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_3');
-				$('.percentage2').html('95%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_3');
-				$('.percentage3').html('25%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_3');
-				$('.percentage4').html('100%');
+				thirdPerson();
 			}
 
 			else if ($('.slick-track').children().eq(5).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_1');
-				$('.percentage1').html('82%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_1');
-				$('.percentage2').html('45%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_1');
-				$('.percentage3').html('95%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_1');
-				$('.percentage4').html('45%');
+				firstPerson();
 			}
 
 			else if ($('.slick-track').children().eq(6).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_2');
-				$('.percentage1').html('18%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_2');
-				$('.percentage2').html('23%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_2');
-				$('.percentage3').html('8%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_2');
-				$('.percentage4').html('65%');
+				secondPerson();
 			}
 
 			else if ($('.slick-track').children().eq(7).hasClass('slick-center')){
-				span1.removeClass();
-				span1.addClass('purple_bar1_3');
-				$('.percentage1').html('41%');
-				span2.removeClass();
-				span2.addClass('purple_bar2_3');
-				$('.percentage2').html('95%');
-				span3.removeClass();
-				span3.addClass('purple_bar3_3');
-				$('.percentage3').html('25%');
-				span4.removeClass();
-				span4.addClass('purple_bar4_3');
-				$('.percentage4').html('100%');
+				thirdPerson();
 			}
-
 
 			})
 			}
+
 		}
 		 
 	purplebars();
