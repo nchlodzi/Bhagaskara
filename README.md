@@ -4,4 +4,4 @@ In this page i used two jquery plugins for responsive sliders (bxslider and slic
 
 Page is fully responsive so hope you will enjoy checking it out! :) </br>
 The outline of the project in PC monitor or laptop look like this:</br>
-<img height="700" src="images/Bhagaskara.jpg" />
+<img height="1400" src="images/Bhagaskara.jpg" />
